@@ -1,31 +1,131 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sweet Bliss Cupcakes</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PantherTech Cyber Defense — Home</title>
+  <meta name="description" content="PantherTech Cyber Defense — enterprise-grade cybersecurity for individuals, businesses, and governments." />
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <header>
-    <h1>Sweet Bliss Cupcakes</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="menu.html">Menu</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="order.html" class="order-btn">Order</a>
-    </nav>
+<body data-theme="dark">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="PantherTech Cyber Defense">
+        <span class="logo">🛡️</span><span class="brand-name">PantherTech</span>
+        <small class="tag">Cyber Defense</small>
+      </a>
+
+      <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">🌙</button>
+
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav">☰</button>
+
+      <nav id="nav" class="site-nav" role="navigation" aria-label="Main">
+        <ul>
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="solutions.html" class="nav-link">Solutions</a></li>
+          <li><a href="threat-intel.html" class="nav-link">Threat Intelligence</a></li>
+          <li><a href="aboutus.html" class="nav-link">About</a></li>
+          <li><a href="careers.html" class="nav-link">Careers</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contactus.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <h2>Delicious Cupcakes, Made with Love</h2>
-    <p>Freshly baked every day with the finest ingredients.</p>
-    <a href="menu.html" class="btn">View Our Menu</a>
-  </section>
+  
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1 class="reveal">PantherTech Cyber Defense</h1>
+          <p class="lead reveal delay-1">
+            Enterprise-grade cybersecurity built for both individuals and organizations. Managed detection, incident response,
+            cloud & application security, and threat intelligence — backed by 24/7 human analysts and AI-assisted tooling.
+          </p>
+          <p class="cta-row reveal delay-2">
+            <a class="btn primary" href="services.html">Explore Services</a>
+            <a class="btn ghost" href="contactus.html">Request a Quote</a>
+          </p>
 
-  <footer>
-    <p>&copy; 2025 Sweet Bliss Cupcakes</p>
+          <ul class="trust-list reveal delay-3" aria-hidden="false">
+            <li><strong>24/7 Monitoring</strong> — SOC analysts + automated triage</li>
+            <li><strong>Compliance</strong> — ISO 27001 / NIST / GDPR readiness</li>
+            <li><strong>Tailored</strong> — SMB to enterprise solutions</li>
+          </ul>
+        </div>
+
+        <aside class="hero-panel reveal delay-2" aria-labelledby="threat-panel-title">
+          <h2 id="threat-panel-title">Live Demo — Threat Feed</h2>
+          <div id="threat-feed" class="threat-feed" aria-live="polite">
+            
+          </div>
+          <div class="panel-actions">
+            <button id="refresh" class="btn small">Rotate Feed</button>
+            <a class="btn tiny ghost" href="threat-intel.html">Full Intel</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    
+    <section class="container features">
+      <h2 class="section-title reveal">Why PantherTech</h2>
+      <div class="feature-grid">
+        <article class="feature-card reveal delay-1">
+          <h3>Human + AI Defense</h3>
+          <p>Combining expert analysts with behavioral AI models to reduce false positives and speed response times.</p>
+        </article>
+
+        <article class="feature-card reveal delay-2">
+          <h3>Adaptive Remediation</h3>
+          <p>Actionable remediation steps prioritized by impact and ease — we help you fix, not just report.</p>
+        </article>
+
+        <article class="feature-card reveal delay-3">
+          <h3>End-to-End Services</h3>
+          <p>From assessments and secure architecture to incident response and continuous monitoring.</p>
+        </article>
+      </div>
+    </section>
+
+    
+    <section class="container quick-services reveal delay-4">
+      <h2 class="section-title">Core Services</h2>
+      <div class="quick-grid">
+        <div class="quick">
+          <h4>Vulnerability Assessment</h4>
+          <p>Automated scans + manual verification for accurate risk scoring.</p>
+        </div>
+        <div class="quick">
+          <h4>Pen Testing</h4>
+          <p>Offensive testing that mirrors real-world attack vectors under a safe scope.</p>
+        </div>
+        <div class="quick">
+          <h4>Cloud Security</h4>
+          <p>Secure architecture, IAM hardening, and drift detection.</p>
+        </div>
+        <div class="quick">
+          <h4>Managed Detection</h4>
+          <p>24/7 SOC with playbooks and Rapid IR support.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> PantherTech Cyber Defense — Built for defense.</p>
+      <div class="footer-links">
+        <a href="privacy.html" target="_blank" rel="noopener">Privacy</a> ·
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
