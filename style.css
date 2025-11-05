@@ -1,0 +1,80 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #fff5f8;
+  color: #333;
+}
+
+header {
+  background: #ffb6c1;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+nav a:hover,
+nav .active {
+  color: #fff;
+}
+
+.order-btn {
+  background: #ff4d6d;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #ffd6dc, #fff);
+}
+
+.menu, .about, .contact, .order {
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+.menu .item {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+  background: #ffb6c1;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea, select, button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #ff4d6d;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background: #e63b58;
+}

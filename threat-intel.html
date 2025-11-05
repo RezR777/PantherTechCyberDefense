@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PantherTech — Threat Intelligence</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="dark">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="logo">🛡️</span><span class="brand-name">PantherTech</span><small class="tag">Cyber Defense</small></a>
+      <button id="theme-toggle-4" class="icon-btn" aria-label="Toggle theme">🌙</button>
+      <button id="nav-toggle-4" class="nav-toggle" aria-expanded="false" aria-controls="nav-4">☰</button>
+      <nav id="nav-4" class="site-nav">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="solutions.html" class="nav-link">Solutions</a></li>
+          <li><a href="threat-intel.html" class="nav-link active">Threat Intelligence</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="careers.html" class="nav-link">Careers</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container reveal">
+      <h1>Threat Intelligence & Research</h1>
+      <p class="lead">PantherTech Intelligence provides actionable, contextual threat data: indicators of compromise (IOCs), TTP tracking, and quarterly threat reports.</p>
+    </section>
+
+    <section class="container intel-grid reveal delay-1">
+      <article class="intel-card">
+        <h3>Recent Alerts</h3>
+        <ul id="intel-list">
+          <li>Suspicious C2 infrastructure observed affecting cloud environments</li>
+          <li>New critical RCE in widely used dependency — patch recommended</li>
+          <li>Increase in BEC campaigns targeting finance teams</li>
+        </ul>
+      </article>
+
+      <article class="intel-card">
+        <h3>Quarterly Threat Report</h3>
+        <p>Our Q4 report analyzes active campaigns, industry-specific risks, and recommended mitigations. <a href="#">Download (PDF)</a></p>
+      </article>
+
+      <article class="intel-card">
+        <h3>IoC Feed</h3>
+        <p>Subscribe to our streaming IoC feed or integrate via API (demo token). Contact us for integration details.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year-intel"></span> PantherTech Cyber Defense</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

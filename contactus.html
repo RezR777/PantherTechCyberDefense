@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PantherTech — Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="dark">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="logo">🛡️</span><span class="brand-name">PantherTech</span><small class="tag">Cyber Defense</small></a>
+      <button id="theme-toggle-8" class="icon-btn" aria-label="Toggle theme">🌙</button>
+      <button id="nav-toggle-8" class="nav-toggle" aria-expanded="false" aria-controls="nav-8">☰</button>
+      <nav id="nav-8" class="site-nav">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="solutions.html" class="nav-link">Solutions</a></li>
+          <li><a href="threat-intel.html" class="nav-link">Threat Intelligence</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="careers.html" class="nav-link">Careers</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container contact-hero reveal">
+      <h1>Contact & Request a Quote</h1>
+      <p class="lead">Fill out the form and our sales/security engineers will contact you within one business day.</p>
+    </section>
+
+    <section class="container form-section reveal delay-1">
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required minlength="2" />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+
+        <div class="form-row">
+          <label for="company">Company (optional)</label>
+          <input id="company" name="company" type="text" />
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message / Needs</label>
+          <textarea id="message" name="message" rows="6" required minlength="10"></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Send Request</button>
+          <button type="reset" class="btn ghost">Reset</button>
+        </div>
+
+        <p id="form-status" role="status" aria-live="polite" class="muted"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year-contact-page"></span> PantherTech Cyber Defense</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
